@@ -1,0 +1,20 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "spelling-unifier"
+version = "0.1.0"
+description = "Find and unify mixed US/UK spelling variants within a manuscript."
+readme = "README.md"
+requires-python = ">=3.9"
+license = {text = "MIT"}
+authors = [{name = "JANIN A APURBA", email = "japurba97@gmail.com"}]
+keywords = ["research", "automation", "reproducibility", "academic"]
+dependencies = []
+
+[project.scripts]
+spelling-unifier = "spelling_unifier.cli:main"
+
+[tool.setuptools]
+packages = ["spelling_unifier"]
